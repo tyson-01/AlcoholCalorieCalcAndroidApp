@@ -16,7 +16,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: 17
+          java-version: 16
+          distribution: 'adopt'
 
       - name: Build with Gradle
         run: ./gradlew assembleDebug
@@ -31,7 +32,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: 17
+          java-version: 16
+          distribution: 'adopt'
 
       - name: Run Tests
         run: ./gradlew testDebugUnitTest
