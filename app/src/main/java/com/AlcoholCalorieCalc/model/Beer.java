@@ -3,7 +3,7 @@ package com.AlcoholCalorieCalc.model;
 public class Beer extends UnmixedDrink {
     private final int vol;
 
-    public Beer(double abv, int vol, int sweetness) {
+    public Beer(double abv, int vol, double sweetness) {
         this.abv = abv;
         this.vol = vol;
         //this residual sugar calculation is a linear approximation of a polynomial function I made

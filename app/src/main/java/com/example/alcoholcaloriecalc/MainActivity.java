@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         // Get values from text fields
                         double abv = -1;
                         int size = -1;
-                        int sweetness = -1;
+                        Double sweetness = -1.0;
                         try {
                             abv = Double.parseDouble(String.valueOf(inputABV.getText()).toString());
                             size = Integer.parseInt(inputSize.getText().toString());
-                            sweetness = Integer.parseInt(inputSweetness.getText().toString());
+                            sweetness = Double.parseDouble(inputSweetness.getText().toString());
                         } catch (Exception e) {
                             // Invalid input toast message
                             Toast.makeText(getApplicationContext(), "Invalid field(s)", Toast.LENGTH_SHORT).show();
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         }
 
                         // Validate value ranges
-                        if(abv < 0 || abv > 50){
+                        if(abv < 0 || abv > 100){
                             // Invalid abv toast message
                             Toast.makeText(getApplicationContext(), "Invalid abv", Toast.LENGTH_SHORT).show();
                         }

@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sweetness (0-10)" />
+            android:text="Sweetness (1-10)" />
 
         <EditText
             android:id="@+id/inputSweetness"

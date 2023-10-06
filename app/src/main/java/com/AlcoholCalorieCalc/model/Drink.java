@@ -1,6 +1,6 @@
 package com.AlcoholCalorieCalc.model;
 
 public abstract class Drink {
-    public double abv;
-    public double cal;
+    protected double abv;
+    protected double cal;
 }
